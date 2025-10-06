@@ -210,6 +210,8 @@ By the end of this workshop, participants will be able to:
 **Checkpoint commit**:
 `feat(intake): record producer + catalog/category for portal/VA discoverability`
 
+**UI show use catalog builder which takes you to a new UI. Here you will be able to add the catalog, category, and topic. I selected a topic in Employee taxonomy which added the new catalog to the esc portal.
+
 ---
 
 ## Step 7 — **Playbook** for staged lifecycle (Intake → Research → Review → Complete)
