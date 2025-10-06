@@ -176,7 +176,10 @@ By the end of this workshop, participants will be able to:
 ## Step 5 — **Data model**: extend **Task** for “Compliance Research Request”
 
 1. *Studio/AES* → **Create Table** → **Extend table**: choose **Task [task]**. Table label: **Compliance Research Request**; name: `x_<org>_deep_research_request`. ([ServiceNow][4])
-2. Add fields (examples; adapt to your org):
+    - In Studio > create new file > data > empty table, then you will see an extend table option
+    - In AES create new table, then you will see extend table option
+
+3. Add fields (examples; adapt to your org):
 
    * **Executive sponsor** (Reference → `sys_user`)
    * **Business unit** (Reference → `cmn_department`)
@@ -187,7 +190,7 @@ By the end of this workshop, participants will be able to:
    * **Details** (HTML)
    * **Stage** (Choice: *Intake*, *Research*, *Review*, *Complete*)
    * **Linked knowledge** (Reference → `kb_knowledge`)
-3. Save.
+4. Save.
 
 **Checkpoint commit**:
 `feat(data): new table extending task + core fields + Stage choices`
