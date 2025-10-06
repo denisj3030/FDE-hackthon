@@ -200,8 +200,9 @@ By the end of this workshop, participants will be able to:
 ## Step 6 — **Record Producer** for request intake (Service Catalog)
 
 1. *All > Service Catalog > Catalog Definition > Record Producers* → **New**. Target table: your new table. Title: “**Compliance Research Request**”. Add variables that map to your fields (sponsor, driver, risk, due date, summary, details). ([ServiceNow][5])
-2. Place it into a **Catalog** and **Category** (e.g., Catalog “Employee Services”, Category “Compliance”). This organizes the experience in portals and helps discovery. ([ServiceNow][29])
-3. (AES path) You can also add a Record Producer from AES’s **Experience** section. ([ServiceNow][30])
+    - Need to submit to see the variables.
+3. Place it into a **Catalog** and **Category** (e.g., Catalog “Employee Services”, Category “Compliance”). This organizes the experience in portals and helps discovery. ([ServiceNow][29])
+4. (AES path) You can also add a Record Producer from AES’s **Experience** section. ([ServiceNow][30])
 
 > **Why this matters for chat & portals**
 > Catalog and Record Producers surface in **Service Portals** and can be discovered via **AI Search** and **Virtual Agent** (VA). VA can call AI Search during a conversation (Run AI Search block) to show KB or relevant items. ([ServiceNow][31])
