@@ -94,6 +94,7 @@ By the end of this workshop, participants will be able to:
 1. **Get an instance**
 
    * If your org uses **DemoHub**, request a Zurich demo instance there (partner‑only in many cases). Otherwise, use a **Developer PDI** from the ServiceNow developer program. (Your instructor will guide you.) ([ServiceNow][13])
+   * Internal instance requrested via support may need manual plugin installation (from Application Manager). Mine needed App Engine Studio
 
 2. **Install/verify plugins** (admin):
 
@@ -133,6 +134,8 @@ By the end of this workshop, participants will be able to:
 **Checkpoint commit**:
 `feat(app): scaffold “AI Compliant Deep Research” app (scope x_<org>_deep_research)`
 
+**using internal instance, I am unable to "publish" app, not sure if that step is required.
+
 ---
 
 ## Step 3 — Link your app to **GitHub** (source control) & branching
@@ -155,6 +158,8 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `chore(git): link app to GitHub; add branch naming convention`
+
+**If using SSH, need to create (ssh-keygen) key first. Create "credentials" in your instance, use SSH Private Key and paste in your private key. Add your public key in github.
 
 ---
 
