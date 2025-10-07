@@ -133,6 +133,8 @@ By the end of this workshop, participants will be able to:
 **Checkpoint commit**:
 `feat(app): scaffold “AI Compliant Deep Research” app (scope x_<org>_deep_research)`
 
+**DJ notes**: You do NOT need to "Publish" your app.
+
 ---
 
 ## Step 3 — Link your app to **GitHub** (source control) & branching
@@ -155,6 +157,8 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `chore(git): link app to GitHub; add branch naming convention`
+
+**DJ notes**: Create a new key for this using your local environment (ie terminal on Mac). Use `ssh-keygen -t rsa -b 4096` and save it under a new name as to not override your existing key. This will create a public (.pub) and private key. In ServiceNow, search for "Credentials", find SSH Private Key type, add the content of your private key here. On Github side, look for SSH keys section under Settings. Add a new key (content of your public key file) here. Back in ServiceNow, In your Apps "Source Control" section, you can now add the ssh://git@github.... link to your repo and select the SSH credential you created to authenticate.
 
 ---
 
@@ -200,6 +204,10 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `feat(intake): record producer + catalog/category for portal/VA discoverability`
+
+**DJ notes**: You need to create an entry using Record Producer and save it first, than you will see an option to add "variables" in that record. Variable are essentially questions. You can do the same using "Catalog Builder". If using Catalog Builder, you can configure it so your Recorder Producer item is available in one of the existing user portals (like Service Portal - ie /sp or Employee Portal - ie /esc). You may need to create a "category" and a "catalog" first. Than configure those values in Catalog Builder. To make this available in /esc portal, set the "Topic" to Employee taxonomy (for example).
+
+**DJ notes2**: When you are creating the "variables" (or Questions) for user input and mapping these to the table fields you created in Step 5, there are tricks you can use so it pulls your existing values. Its easy for fields that are references, but tricky for choice fields. For choice field like "Risk Level", use the question type should be `choice`, sub-type `dropdown (values from table)`, This will add a new tab called `Additional Details`, here you configure where to pull the values from. The table you want is **`sys_choice`** not the table you created in step 5! This table contains ALL the records for ALL the choice fields in your instance so you need to filter it. Select Label as the lookup field, and filter it for table (the one from step 5), Element (name of the risk field in that table).
 
 ---
 
