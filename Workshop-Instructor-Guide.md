@@ -229,6 +229,8 @@ By the end of this workshop, participants will be able to:
 
 ([ServiceNow][12])
 
+**DJ notes**: You can review [Intro to playbooks course](https://learning.servicenow.com/lxp/en/pages/learning-course?id=learning_course&course_id=8f848432c3ccc694acc871f9d00131d3) for more details about playbooks. There is no exact setup steps here, you can be creative, make some of the activities interactive with human in the loop, some automated. For example, i set up validate fields using "Wait for condition" activity definition, and under automation it completely the activity is Risk is not empty. You can add validations for all fields. Initial triage I set to "checklist task", this requires a human to physically check the boxes (ie review) that you define. 
+
 ---
 
 ## Step 8 — **Workspace** to manage these requests
@@ -247,6 +249,10 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `feat(workspace): lists, dashboard, and embedded Playbook on record page`
+
+**DJ notes**: it was tricky to find where to set the playbook in the workspace. I did this in AES Workspace Builder (Your App > User interface section > Add). Configuring lists, is fairly simple, there is a "record pages" button in the middle, and a "record details" on the left, now on the right you should be able to add a playbook in the bottom of the config, your playbook won't show up here, I picked "Globla Playbook Experience", this worked as long as the table you configured for your Playbook, and the table in this setting is the same. You also might see an error on the playbook tab on existing records (when viewing them in the Workspace), but new records you create in the Workspace should have your playbook stages/activities showing correctly.
+
+**DJ notes2**: if you want this workspace to show up in the Workspaces section of your home UI, add a new record in `sys_app_module.list` table, Link Type shold be URL with the /path (not including domain) to your workspace (you can get it from preview).
 
 ---
 
